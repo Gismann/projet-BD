@@ -1,0 +1,53 @@
+-- ==========================
+-- fichier : modele_insert_marais_salants.sql
+-- base :MARAIS
+-- auteur(s) : Louis Butraud & Thomas Dubos
+-- date :15/12/2014
+-- role : insertion dans la base marais
+-- projet : marais
+-- resultat dans:
+-- ==========================
+
+-- insertion PROPRIETAIRE
+INSERT into PROPRIETAIRE(idpro, nompro, prenompro)
+values (0, 'AAAAA', 'AAA');
+
+--insertion MARAIS
+INSERT into Marais (idmar, nommar, adrmar)
+values (0, 'AAAAA', 'AAA');
+
+--insertion PROPRIETE
+
+INSERT into PROPRIETAIRE(idpro, nompro, prenompro)
+values (0, 'AAAAA', 'AAA');
+
+INSERT into Marais (idmar, nommar, adrmar)
+values (0, 'AAAAA', 'AAA');
+
+insert into PROPRIETE (idpro, idmar)
+values (0, 0);
+
+--insertion CARREAU
+INSERT into Marais (idmar, nommar, adrmar)
+values (0, 'AAAAA', 'AAA');
+
+INSERT into CARREAU (idcar, idmar, numemp)
+values (0, 0000, 000);
+
+--insertion SAUNIER
+INSERT into SAUNIER(idsau, nomsau, prenomsau)
+values (0,'AAAA','aaaa');
+
+--insertion RECOLTE
+INSERT into Marais (idmar, nommar, adrmar)
+values (0, 'AAAAA', 'AAA');
+
+INSERT into CARREAU (idcar, idmar, numemp)
+values (0, 0000, 000);
+
+INSERT into SAUNIER(idsau, nomsau, prenomsau)
+values (0,'AAAA','aaaa');
+
+INSERT into RECOLTE (idrec, idcar, idsau, daterec, typesel, qtesel)
+values (0,0000,0,'15/12/2014','gros', 0);
+
